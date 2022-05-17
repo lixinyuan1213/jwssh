@@ -15,7 +15,7 @@ set privateKey=/home/show/.ss/privk
 :: 远端路径(上传文件后保存的路径)
 set remotePath=/home/show2
 :: 执行的远端脚本路径
-set remoteShell=/home/show2/1.sh
+set remoteShell=/home/show2/start_server.sh
 :: 任务类型(只能是0,1,2中的某个值,0上传文件并执行脚本,1仅上传文件,2仅执行脚本.默认0,非0-2的数按照0处理)
 set taskType=0
 

@@ -1,7 +1,6 @@
 package cn.lisynet.lisycollections;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.ssh.JschUtil;
 import cn.hutool.extra.ssh.Sftp;
@@ -28,7 +27,7 @@ import java.util.List;
 @Slf4j
 public class RemoteShellScript {
     public static void main(String[] args) throws JSchException, IOException {
-        //通过环境变量获取参数
+        // 在构造函数中，通过环境变量获取参数。如果没有设置参数，会在cli中补充上
         AppParams appParams = new AppParams();
 //        appParams = new AppParams("/home/show/javaworkspace","1.1.1.1",22,"root","123456","/home/show/.ssh/privk","/home/newshow","/home/newshow/1.sh",AppParams.TaskType.ONLY_UPLOAD);
         //通过cli获取参数
